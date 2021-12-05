@@ -11,17 +11,53 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
+<!--Import javascript kirjastoja-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<!---->
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
 <script src="js.js"></script>
+<script src="https://kit.fontawesome.com/329b089f11.js" crossorigin="anonymous"></script>
 
 <body>
+    <!--Käyttäjä syöttää tänne ideansa-->
+    <div class="container lomakkeelle">
+        <h1>Aktiivisuuksien hallinta sivusto<br><small class="text-muted">To-Do List</small></h1>
+        <form class="lomake">
+            <div class="form-row">
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" class="form-control rounded-0" id="tekeminen" placeholder="Mitäs tehdä....."
+                            aria-describedby="inputGroupPrepend2" required>
+                        <div class="input-group-prepend">
+                            <input type="button" value="Lisää" class="btn btn-primary btn-sm rounded-0" id="btn">
+                        </div>
+                    </div>
+                    <div id="errorZone" style="display: none">
+                        <p id="errorMessage">Kirjoita yli 3 kirjainta!</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
+    <br><br><br>
 
-    <!--Bootstrap script integration and Jquery-->
+    <div class="container lista">
+        <ul id="myUl">
+            <!--
+            <li>mentats<i class="fas fa-trash-alt"></i></li>
+            <li>mentats<i class="fas fa-trash-alt"></i></li>
+            <li>mentats<i class="fas fa-trash-alt"></i></li>
+            <li>mentats<i class="fas fa-trash-alt"></i></li>
+            <li>mentats<i class="fas fa-trash-alt"></i></li>
+            -->
+        </ul>
+    </div>
+    <!--Bootstrap script integration-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
