@@ -86,10 +86,3 @@ h1 {
 #tallennus:hover {
   background-color: #4b5fd1;
 }
-.lista {
-  border: 1px solid black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
